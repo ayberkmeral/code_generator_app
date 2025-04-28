@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yapay Zeka Kod Üretici</title>
+</head>
+<body>
+    <h1>Prompt Girin</h1>
+    <form method="POST">
+        <textarea name="prompt" rows="5" cols="50" placeholder="İstediğiniz Python kodunu açıklayın..."></textarea><br><br>
+        <input type="submit" value="Gönder">
+    </form>
+
+    {% if title %}
+        <h2>Başlık: {{ title }}</h2>
+        <pre>{{ code }}</pre>
+    {% endif %}
+</body>
+</html>
